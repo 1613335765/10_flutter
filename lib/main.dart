@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Counter expansion ',
       theme: ThemeData(
-        primarySwatch: Colors.purple,
+        primarySwatch: Colors.lightBlue,
       ),
       home: const MyHomePage(title: 'Counter expansion '),
       debugShowCheckedModeBanner: false,
@@ -54,9 +54,9 @@ class _MyHomePageState extends State<MyHomePage> {
 
   void _changePic() {
     setState(() {
-      _path = _path == "assets/images/5.jpg"
-          ? "assets/images/4.jpg"
-          : "assets/images/5.jpg";
+      _path = _path == "assets/images/2.jpg"
+          ? "assets/images/1.jpg"
+          : "assets/images/3.jpg";
     });
   }
 
@@ -98,7 +98,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           borderRadius: BorderRadius.circular(20)),
                     ),
                     child: const Text(
-                      "Return Zero",
+                      "清零",
                       textScaleFactor: 1.5,
                     ),
                   ),
@@ -113,7 +113,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           borderRadius: BorderRadius.circular(20)),
                     ),
                     child: const Text(
-                      "Reduce a count",
+                      "更换图片",
                       textScaleFactor: 1.5,
                     ),
                   ),
@@ -128,7 +128,7 @@ class _MyHomePageState extends State<MyHomePage> {
                           borderRadius: BorderRadius.circular(20)),
                     ),
                     child: const Text(
-                      "Change a picture",
+                      "减一",
                       textScaleFactor: 1.5,
                     ),
                   ),
